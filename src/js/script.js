@@ -1,6 +1,6 @@
 new fullpage('#fullpage', {
 	menu: '#navigation',
-	anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthdPage', 'fithPage', 'sixthPage'],
+	anchors:['about', 'web', 'teaching', 'marketing', 'ux', 'immersive', 'education', 'speaking'],
 	autoScrolling:true,
 	scrollHorizontally: true
 });

@@ -5,22 +5,22 @@ html(lang='en')
 
         include scripts.js
         meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description' content='')
+        meta(name='author' content='')
 
-        title Michael Posso | Web Developer | Technology Educatior
+        title Michael Posso | Web Developer | Technology Educator
 
-        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+        link(rel='icon' type='image/x-icon' href='assets/img/favicon.ico')
 
         // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v5.15.3/js/all.js', crossorigin='anonymous')
+        script(src='https://use.fontawesome.com/releases/v5.15.3/js/all.js' crossorigin='anonymous')
 
         // Google fonts
-        link(href='https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald:wght@200&display=swap', rel='stylesheet', type='text/css')
- 
+        link(href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Lato:wght@300&family=Yeseva+One&display=swap" rel="stylesheet")
+
         // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
+        link(href='css/styles.css' rel='stylesheet')
 
     body#page-top
 
@@ -29,30 +29,34 @@ html(lang='en')
             a.navbar-brand.js-scroll-trigger(href='#page-top')
                 span.d-block.d-lg-none Michael Posso
                 span.d-none.d-lg-block
-                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.jpg', alt='...')
-            button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.jpg' alt='...')
+            button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
                 span.navbar-toggler-icon
             #navbarResponsive.collapse.navbar-collapse
                 ul.navbar-nav#navigation
                     li.nav-item
-                        a.nav-link.js-scroll-trigger.active(href='#firstPage', data-menuanchor="firstPage") About
+                        a.nav-link.js-scroll-trigger.active(href='#about' data-menuanchor="about") About
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#secondPage', data-menuanchor="secondPage") Web Development
+                        a.nav-link.js-scroll-trigger(href='#web' data-menuanchor="web") Web Development
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#thirdPage', data-menuanchor="thirdPage") Instructional Design
+                        a.nav-link.js-scroll-trigger(href='#teaching' data-menuanchor="teaching") Instructional Design
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#fourthdPage', data-menuanchor="fourthdPage") User Experience
+                        a.nav-link.js-scroll-trigger(href='#marketing' data-menuanchor="marketing") Digital Marketing
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#fithPage', data-menuanchor="fithPage") Immersive Design
+                        a.nav-link.js-scroll-trigger(href='#ux' data-menuanchor="ux") User Experience
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#sixthPage', data-menuanchor="sixthPage") Education
+                        a.nav-link.js-scroll-trigger(href='#immersive' data-menuanchor="immersive") Immersive Design
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#education' data-menuanchor="education") Education
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#speaking' data-menuanchor="speaking") Speaking
 
         // Page Content
         .container-fluid.p-0
 
             #fullpage
                 // About
-                section#about.resume-section.section
+                section.resume-section.section
                     .resume-section-content
                         h1.mb-0
                             | Michael<br>Posso
@@ -73,7 +77,7 @@ html(lang='en')
                         include arrow.svg
 
                 // Web Development
-                section#skills.resume-section.section
+                section.resume-section.section
                     .resume-section-content
                         h2.mb-0 Web Development
 
@@ -100,13 +104,17 @@ html(lang='en')
                                 i.fab.fa-npm
                         .container-fluid.mt-5
                             .row.no-padding
-                                .col-4
-                                    .subheading.mb-3 Databases & Workflows
+                                .col-3
+                                    .subheading.mb-3 Workflows
                                     ul.fa-ul.mb-0
                                         li
                                             span.fa-li
                                                 i.fas.fa-check
-                                            | Mobile-First, Responsive Design
+                                            | DevOps
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | TypeScript
                                         li
                                             span.fa-li
                                                 i.fas.fa-check
@@ -115,7 +123,7 @@ html(lang='en')
                                             span.fa-li
                                                 i.fas.fa-check
                                             | Agile Development & Scrum
-                                .col-4
+                                .col-3
                                     .subheading.mb-3 Databases
                                     ul.fa-ul.mb-0
                                         li
@@ -134,7 +142,7 @@ html(lang='en')
                                             span.fa-li
                                                 i.fas.fa-check
                                             | Firebase
-                                .col-4
+                                .col-3
                                     .subheading.mb-3 Frameworks
                                     ul.fa-ul.mb-0
                                         li
@@ -154,60 +162,130 @@ html(lang='en')
                                                 i.fas.fa-check
                                             | NextJS
 
-                // Technology Educator
-                section#experience.resume-section.section
+                                .col-3
+                                    .subheading.mb-3 APIs
+                                    ul.fa-ul.mb-0
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | New York Times
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | Google Maps
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | Yahoo Finance
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | IBM Watson
+
+                // Teaching & Instructional Design
+                section.resume-section.section
                     .resume-section-content
-                            h2.mb-5 Teaching & Instructional Design
+                        h2.mb-5 Teaching & Instructional Design
 
-                            .d-flex.flex-column.flex-md-row.justify-content-between.mb-3
-                                .flex-grow-1
-                                    h3.mb-0 Fashion Institute of Technology
-                                    p.lead 
-                                        b Adjunct Assistant Professor 
-                                        | - Illustration and Interactive Media Department
+                        .d-flex.flex-column.flex-md-row.justify-content-between.mb-3
+                            .flex-grow-1
+                                h3.mb-0 Fashion Institute of Technology
+                                p.lead 
+                                    b Adjunct Assistant Professor 
+                                    | | Illustration and Interactive Media Department
 
-                            .d-flex.flex-column.flex-md-row.justify-content-between.mb-3
-                                .flex-grow-1
-                                    h3.mb-0 Fashion Institute of Technology
-                                    p.lead 
-                                        b Continuing Education Instructor 
-                                        | - Unity XR: AR, MR, VR Development Certificate Program
+                        .d-flex.flex-column.flex-md-row.justify-content-between.mb-3
+                            .flex-grow-1
+                                h3.mb-0 Fashion Institute of Technology
+                                p.lead 
+                                    b Continuing Education Instructor 
+                                    | | Unity XR: AR, MR, VR Development Certificate Program
 
-                            .d-flex.flex-column.flex-md-row.justify-content-between.mb-3
-                                .flex-grow-1
-                                    h3.mb-0 University of Miami
-                                    p.lead 
-                                        b WordPress Instructor and User Experience
-                                        | - Digital Marketing Bootcamp
+                        .d-flex.flex-column.flex-md-row.justify-content-between.mb-3
+                            .flex-grow-1
+                                h3.mb-0 University of Miami
+                                p.lead 
+                                    b WordPress Instructor and User Experience
+                                    | | Digital Marketing Bootcamp
 
-                            .d-flex.flex-column.flex-md-row.justify-content-between.mb-3
-                                .flex-grow-1
-                                    h3.mb-0 City University of New York
-                                    p.lead 
-                                        b HTML and JavaScript Instructor 
-                                        | - Web Development Certificate
+                        .d-flex.flex-column.flex-md-row.justify-content-between.mb-3
+                            .flex-grow-1
+                                h3.mb-0 City University of New York
+                                p.lead 
+                                    b HTML and JavaScript Instructor 
+                                    | | Web Development Certificate
 
-                            .d-flex.flex-column.flex-md-row.justify-content-between.mb-3
-                                .flex-grow-1
-                                    h3.mb-0 TechRow
-                                    p.lead 
-                                        b Instructional Designer and Industry Advisor
-                                        | - Virtual Reality Makers High School Program
+                        .d-flex.flex-column.flex-md-row.justify-content-between.mb-3
+                            .flex-grow-1
+                                h3.mb-0 TechRow
+                                p.lead 
+                                    b Instructional Designer and Industry Advisor
+                                    | | Virtual Reality Makers High School Program
 
-                            .d-flex.flex-column.flex-md-row.justify-content-between.mb-3
-                                .flex-grow-1
-                                    h3.mb-0 CodeWiz
-                                    p.lead 
-                                        b Instructional Designer
-                                        | - Game Design with LEGO Microgame Summer Course                       
-             
-            
+                        .d-flex.flex-column.flex-md-row.justify-content-between.mb-3
+                            .flex-grow-1
+                                h3.mb-0 CodeWiz
+                                p.lead 
+                                    b Instructional Designer
+                                    | | Game Design with LEGO Microgame Summer Course                       
+
+
+
+                // Digital Marketing
+                section.resume-section.section
+                    .resume-section-content
+                        h2.mb-0 Digital Marketing
+
+                        p.lead.mb-5.mt-3
+                            |  While my focus is mobile-first responsive fast websites with HTML5, modern JavaScript,  SASS, PHP, and MySQL and GraphQL. I also have experience in DevOps workflows and Cloud based applications. The past years, I have developed static API based websites with Gatsby and NextJS.
+
+                        .container-fluid.mt-5
+                            .row.no-padding
+                                .col-4
+                                    .subheading.mb-3 CRM
+                                    ul.fa-ul.mb-0
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | HubSpot CRM 
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | SalesForce
+                                .col-4
+                                    .subheading.mb-3 Email Marketing
+                                    ul.fa-ul.mb-0
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | Oracle Responsys
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            |  MailChimp
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | SalesForce 
+
+                                .col-4
+                                    .subheading.mb-3 eCommerce
+                                    ul.fa-ul.mb-0
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | WooCommerce
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | Shopify
+
                 // UX
-                section#interests.resume-section.section
+                section.resume-section.section
                     .resume-section-content
                         h2.mb-5 User Experience
                         p.lead
-                            | I enjoy creating user experiences and user interfaces for digital media. I believe in human centered design, from ideation all the way to development, always with the end user in mind.
+                            | I enjoy creating user experiences and user interfaces for digital media. I believe in human centered design, from ideation all the way to development, always with the end user in mind. I have conducted usability anf field studies, surveys and A/B testing for websites, SaaS and mobile apps.
                         .container-fluid.mt-5
                             .row.no-padding
                                 .col-4
@@ -226,60 +304,55 @@ html(lang='en')
                                                 i.fas.fa-check
                                             | Double Diamond Method
                                 .col-4
-                                        .subheading.mb-3 UX Research
-                                        ul.fa-ul.mb-0
-                                            li
-                                                span.fa-li
-                                                    i.fas.fa-check
-                                                | Visual Website Optimizer
-                                            li
-                                                span.fa-li
-                                                    i.fas.fa-check
-                                                | Google Analytics &amp; Data Studio
-                                            li
-                                                span.fa-li
-                                                    i.fas.fa-check
-                                                | HotJar
-                                            li
-                                                span.fa-li
-                                                    i.fas.fa-check
-                                                | UXCam                                            
+                                    .subheading.mb-3 UX Research
+                                    ul.fa-ul.mb-0
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | Visual Website Optimizer
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | Google Analytics &amp; Data Studio
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | HotJar
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | UXCam                                            
                                 .col-4
-                                        .subheading.mb-3 UI Tools
-                                        ul.fa-ul.mb-0
-                                            li
-                                                span.fa-li
-                                                    i.fas.fa-check
-                                                | Adobe XD
-                                            li
-                                                span.fa-li
-                                                    i.fas.fa-check
-                                                | Figma
-                                            li
-                                                span.fa-li
-                                                    i.fas.fa-check
-                                                | InVision
-                                            li
-                                                span.fa-li
-                                                    i.fas.fa-check
-                                                | OmniGraffle
-                                            li
-                                                span.fa-li
-                                                    i.fas.fa-check
-                                                | FullStory                                        
+                                    .subheading.mb-3 UI Tools
+                                    ul.fa-ul.mb-0
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | Adobe XD
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | Figma
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | InVision
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | OmniGraffle
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
+                                            | FullStory                                        
 
 
                 // Immersive
-                section#interests.resume-section.section
+                section.resume-section.section
                     .resume-section-content
                         h2.mb-5 Immersive Design
                         p.lead
-                            | The immersive technology field is growing exponentially. Experimenting and building virtual and augumented reality experiences for art projects and
- 
-                        .portfolio-container
-                            .tile
-                                img(src="assets/img/vr-ar.jpg")
-
+                            | As the immersive technology field is growing exponentially, I have been exploring diverse channels of media to create and develop 3D experiences in Virtual Reality and Augmented reality. From mobile VR using google cardboard, to high end headsets like the Oculus Quest 2. I have collaborated with architects, artists and designers to bring their vision to a fully immersive medium.
 
                         .container-fluid.mt-5
                             .row.no-padding
@@ -293,6 +366,10 @@ html(lang='en')
                                         li
                                             span.fa-li
                                                 i.fas.fa-check
+                                            | Adobe Aero                                            
+                                        li
+                                            span.fa-li
+                                                i.fas.fa-check
                                             | AframeJS
                                         li
                                             span.fa-li
@@ -302,31 +379,40 @@ html(lang='en')
                                             span.fa-li
                                                 i.fas.fa-check
                                             | SparkAR
+
                 // Education
-                section#education.resume-section.section
+                section.resume-section.section
                     .resume-section-content
                         h2.mb-5 Education
 
                         .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                             .flex-grow-1
                                 h3.mb-0 SUNY Polytechnic Institute
-                                .subheading.mb-3 Masters of Science
-                                div Information Design and Technology
+                                p.lead 
+                                    b Masters of Science 
+                                    | | Information Design and Technology
 
                         .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                             .flex-grow-1
                                 h3.mb-0 Fashion Institute of Technology
-                                .subheading.mb-3 Bachelor of Fine Arts
-                                div Graphic Desing
+                                p.lead
+                                    b Bachelor of Fine Arts
+                                    | | Graphic Design 
 
                         .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                             .flex-grow-1
                                 h3.mb-0 Fashion Institute of Technology
-                                .subheading.mb-3 Associate of Applied Science
-                                div Communications Design
+                                p.lead 
+                                    b Associate of Applied Science 
+                                    | | Communications Design
 
                         h3.mb-0 Certifications
                         ul.fa-ul.mt-3
+                            li
+                                span.fa-li
+                                    i.fas.fa-award.text-warning
+                                b Massachusetts Institute of Technology
+                                | Backend Development                        
                             li
                                 span.fa-li
                                     i.fas.fa-award.text-warning
@@ -346,9 +432,52 @@ html(lang='en')
                                 span.fa-li
                                     i.fas.fa-award.text-warning
                                 b New York University
-                                | Advanced SQL Developer Certificate         
+                                | Advanced SQL Developer Certificate
+
+                // Speaking                
+                section.resume-section.section
+                    .resume-section-content
+                        h2.mb-5 Speaking Engagements
+
+                        .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                            .flex-grow-1
+                                h3.mb-0 2021
+                                p.list
+                                    b New Jersey Institute of Technology
+                                    | | Speaker - <em>Git and Github</em>
+                                p.list
+                                    b WebXR Design Summit
+                                    | | Panelist - <em>Virtual Reality and Design Education</em>
+
+                        .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                            .flex-grow-1
+                                h3.mb-0 2020
+                                p.list
+                                    b The Knowledge House
+                                    | | Speaker - <em>Modern WordPress Development</em> 
+
+                        .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                            .flex-grow-1
+                                h3.mb-0 2019
+                                p.list
+                                    b JavaScript for Wordpress Conference
+                                    | | Speaker - <em>Virtual Reality and the Open Web</em> 
+
+                        .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                            .flex-grow-1
+                                h3.mb-0 2018
+                                p.list
+                                    b WordCamp New York City
+                                    | |  Session Speaker - <em>Virtual Reality and Wordpress</em>
+
+                        .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                            .flex-grow-1
+                                h3.mb-0 2017
+                                p.list
+                                    b Silicon Harlem Conference 2017
+                                    | | Panelist - <em>Virtual Reality in Education</em>
+
         include scripts.js
-          
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js')
